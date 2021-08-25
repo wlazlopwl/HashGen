@@ -29,15 +29,15 @@
         android:text="COPY"
         android:textSize="@dimen/font_size"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/appCompatButton"
-        app:layout_constraintEnd_toStartOf="@+id/appCompatButton"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_send"
+        app:layout_constraintEnd_toStartOf="@+id/btn_send"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent">
 
     </androidx.appcompat.widget.AppCompatButton>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+        android:id="@+id/btn_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
