@@ -20,18 +20,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="HASH"
-        android:textColor="@color/white"
         android:background="@drawable/round_button_clicked"
+        android:text="GENERATE HASH"
+        android:textSize="@dimen/font_size"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/tv_entered_text"
+        app:layout_constraintStart_toStartOf="@+id/tv_entered_text" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_hash_methods"
@@ -39,15 +39,18 @@
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/tv_entered_text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.916" />
 
     <EditText
-        android:id="@+id/textView"
+        android:id="@+id/tv_entered_text"
         android:layout_width="0dp"
         android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/round_button"
         android:ems="10"
         android:hint="Enter your text"
@@ -56,8 +59,7 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="@+id/rv_hash_methods"
-        app:layout_constraintStart_toStartOf="@+id/rv_hash_methods"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="@+id/rv_hash_methods" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

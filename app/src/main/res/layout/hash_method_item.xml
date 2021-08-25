@@ -8,12 +8,14 @@
 
     <TextView
         android:id="@+id/hast_name"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@drawable/round_button"
         android:textColor="@color/white"
         android:gravity="center"
+        android:padding="5dp"
         android:layout_margin="5dp"
+        android:textSize="@dimen/font_size"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
